@@ -13,20 +13,33 @@
         android:theme="@style/Theme.WavesOfFood"
         tools:targetApi="31">
         <activity
+            android:name=".DetailsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity
+            android:name=".PayOutActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity
             android:name=".ChooseLocationActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
         <activity
             android:name=".SignActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
         <activity
             android:name=".StartActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".Splash_Screen"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,8 +47,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Splash_Screen"
-            android:exported="true" />
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
     </application>
 
 </manifest>

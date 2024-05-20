@@ -33,7 +33,7 @@
                 android:text="Name"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
-    
+
             <EditText
                 android:id="@+id/editTextText2"
                 android:layout_width="wrap_content"
@@ -41,22 +41,24 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:ems="10"
+                android:enabled="true"
+                android:focusableInTouchMode="true"
                 android:fontFamily="@font/yeonsung_regular"
                 android:inputType="text"
-                android:text="Name Of User"/>
+                android:text="Name Of User" />
         </LinearLayout>
-    
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/profileedittextshape"
             android:elevation="2dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
-    
+
             <TextView
                 android:id="@+id/textView20"
                 android:layout_width="30dp"
@@ -67,7 +69,7 @@
                 android:text="Address"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
-    
+
             <EditText
                 android:id="@+id/editTextText3"
                 android:layout_width="wrap_content"
@@ -77,22 +79,24 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:ems="10"
+                android:enabled="true"
+                android:focusableInTouchMode="true"
                 android:fontFamily="@font/yeonsung_regular"
                 android:inputType="textMultiLine"
-                android:text="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual " />
+                android:text="So 1 Vo Van Ngan, Phuong Binh Tho, Thanh Pho Thu Duc " />
         </LinearLayout>
-    
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/profileedittextshape"
             android:elevation="2dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
-    
+
             <TextView
                 android:id="@+id/textView21"
                 android:layout_width="30dp"
@@ -103,7 +107,7 @@
                 android:text="Email"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
-    
+
             <EditText
                 android:id="@+id/editTextText4"
                 android:layout_width="wrap_content"
@@ -111,23 +115,25 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:ems="10"
+                android:enabled="true"
+                android:focusableInTouchMode="true"
                 android:fontFamily="@font/yeonsung_regular"
                 android:inputType="textEmailAddress"
-                android:text="example@gmail.com"/>
+                android:text="example@gmail.com" />
         </LinearLayout>
-    
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/profileedittextshape"
             android:elevation="2dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
-    
+
             <TextView
                 android:id="@+id/textView22"
                 android:layout_width="30dp"
@@ -138,7 +144,7 @@
                 android:text="Phone"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
-    
+
             <EditText
                 android:id="@+id/editTextText5"
                 android:layout_width="wrap_content"
@@ -146,9 +152,11 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:ems="10"
+                android:enabled="true"
+                android:focusableInTouchMode="true"
                 android:fontFamily="@font/yeonsung_regular"
                 android:inputType="phone"
-                android:text="0123456789"/>
+                android:text="0123456789" />
         </LinearLayout>
     </LinearLayout>
 

@@ -14,7 +14,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
         //Nhấn nút đăng nhập để đăng ký
         binding.loginbutton.setOnClickListener{
-            val intent = Intent(this, SignActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
         // Nhấn vào không có tài khoản để đăng ký

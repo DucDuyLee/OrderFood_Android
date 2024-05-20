@@ -17,6 +17,6 @@ class SignActivity : AppCompatActivity() {
             val intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)
         }
-
+        //Nhấn nút Sign Up để chuyển sang trang Home
     }
 }

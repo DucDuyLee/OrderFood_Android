@@ -14,6 +14,7 @@ import com.example.wavesoffood.databinding.FragmentSearchBinding
 class SearchFragment : Fragment() {
     private lateinit var binding: FragmentSearchBinding
     private lateinit var adapter: MenuAdapter
+
     private val originalMenuFoodName = listOf(
         "Burger", "Sandwich", "Momo",
         "Item", "Sandwich",
@@ -49,14 +50,16 @@ class SearchFragment : Fragment() {
     ): View? {
         binding = FragmentSearchBinding.inflate(inflater, container, false)
 
-        adapter = MenuAdapter(filteredMenuFoodName, filteredMenuItemPrice, filteredMenuImage)
+        adapter = MenuAdapter(filteredMenuFoodName, filteredMenuItemPrice, filteredMenuImage, requireContext())
         binding.menuRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.menuRecyclerView.adapter = adapter
 
-        // setup search view
-        //setupSearchView()
-        // show all menu items
+        // Setup search view
+        setupSearchView()
+
+        // Show all menu items
         showAllMenu()
+
         return binding.root
     }
 
@@ -100,9 +103,5 @@ class SearchFragment : Fragment() {
             }
         }
         adapter.notifyDataSetChanged()
-    }
-
-    companion object {
-
     }
 }

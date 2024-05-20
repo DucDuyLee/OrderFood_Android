@@ -1,11 +1,13 @@
-package com.example.wavesoffood.fragment
+package com.example.wavesoffood.Fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.wavesoffood.PayOutActivity
 import com.example.wavesoffood.R
 import com.example.wavesoffood.adapter.CartAdapter
 import com.example.wavesoffood.databinding.FragmentCartBinding
@@ -23,9 +25,9 @@ class CartFragment : Fragment() {
     ): View? {
         binding = FragmentCartBinding.inflate(inflater, container, false)
 
-        val cartFoodNames = listOf("Burger", "Sandwich", "Momo", "Item", "Sandwich", "Momo")
-        val cartItemPrices = listOf("$5", "$6", "$8", "$9", "$10", "$10")
-        val cartImages = listOf(
+        val cartFoodNames = mutableListOf("Burger", "Sandwich", "Momo", "Item", "Sandwich", "Momo")
+        val cartItemPrices = mutableListOf("$5", "$6", "$8", "$9", "$10", "$10")
+        val cartImages = mutableListOf(
             R.drawable.menu1,
             R.drawable.menu2,
             R.drawable.menu3,
@@ -34,9 +36,14 @@ class CartFragment : Fragment() {
             R.drawable.menu6
         )
 
-        val adapter = CartAdapter(ArrayList(cartFoodNames), ArrayList(cartItemPrices), ArrayList(cartImages))
+        val adapter = CartAdapter(cartFoodNames, cartItemPrices, cartImages)
         binding.cartRecycleView.layoutManager = LinearLayoutManager(requireContext())
         binding.cartRecycleView.adapter = adapter
+
+        binding.processButton.setOnClickListener{
+            val intent = Intent(requireContext(),PayOutActivity::class.java)
+            startActivity(intent)
+        }
 
         return binding.root
     }

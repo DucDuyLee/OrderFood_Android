@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.wavesoffood.R
 import com.example.wavesoffood.adapter.MenuAdapter
 import com.example.wavesoffood.databinding.FragmentMenuBootomSheetBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
@@ -43,7 +42,7 @@ class MenuBootomSheetFragment : BottomSheetDialogFragment() {
             R.drawable.menu6
         )
 
-        val adapter = MenuAdapter(ArrayList(menuFoodNames), ArrayList(menuItemPrices), ArrayList(menuImages))
+        val adapter = MenuAdapter(ArrayList(menuFoodNames), ArrayList(menuItemPrices), ArrayList(menuImages), requireContext())
         binding.menuRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.menuRecyclerView.adapter = adapter
 
