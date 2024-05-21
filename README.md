@@ -15,7 +15,7 @@
       <th>Đào</th>
       <th>Duy Phát</th>
       <th>Leader</th>
-      <th>21110270@student.hcmute.edu.com</th>
+      <th>21110270@student.hcmute.edu.vn</th>
     </tr>
     <tr>
       <th>21110318</th>
