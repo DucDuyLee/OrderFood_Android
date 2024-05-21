@@ -1,6 +1,4 @@
-<h1>Project Information</h1>
-<p>Xây dựng App Food Order</p>
-<h1>Table of collabration</h1>
+<h1>Nhóm 01 -Xây dựng App Food Order</h1>
 <table>
   <thead>
     <th>Student ID</th>
